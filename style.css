@@ -1,0 +1,118 @@
+body {
+    background: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    padding-top: 50px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+/* === GLOBAL === */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #00fff7;
+    font-family: 'Orbitron', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === CONTAINER === */
+.container {
+    background: rgba(10, 10, 20, 0.85);
+    border: 2px solid #ff00ff;
+    box-shadow:
+        0 0 15px #ff00ff,
+        0 0 30px #00fff7;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+}
+
+/* === HEADLINE === */
+h1 {
+    color: #ff00ff;
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 15px #ff00ff;
+    margin-bottom: 30px;
+}
+
+/* === INPUT === */
+input {
+    width: 80%;
+    padding: 12px;
+    background: #000;
+    border: 2px solid #00fff7;
+    color: #00fff7;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 0 10px #00fff7;
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: #00aaa7;
+}
+
+/* === BUTTONS === */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Orbitron', monospace;
+    color: #000;
+    background: linear-gradient(45deg, #00fff7, #ff00ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:
+        0 0 10px #00fff7,
+        0 0 20px #ff00ff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px #00fff7,
+        0 0 40px #ff00ff;
+}
+
+/* === TEXT === */
+#hinweis {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+#versuche {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+/* === GLITCH EFFECT OPTIONAL === */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff; }
+    50% { text-shadow: -2px -2px #00fff7; }
+    100% { text-shadow: 2px -2px #ff00ff; }
+}
+
+h1:hover {
+    animation: glitch 0.2s infinite;
+}
