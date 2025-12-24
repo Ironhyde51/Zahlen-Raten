@@ -15,7 +15,7 @@ input, button {
 button {
     cursor: pointer;
 }
-/* === GLOBAL === */
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -27,7 +27,7 @@ body {
     align-items: center;
 }
 
-/* === CONTAINER === */
+
 .container {
     background: rgba(10, 10, 20, 0.85);
     border: 2px solid #ff00ff;
@@ -40,7 +40,7 @@ body {
     width: 350px;
 }
 
-/* === HEADLINE === */
+
 h1 {
     color: #ff00ff;
     text-shadow:
@@ -49,7 +49,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* === INPUT === */
+
 input {
     width: 80%;
     padding: 12px;
@@ -67,7 +67,7 @@ input::placeholder {
     color: #00aaa7;
 }
 
-/* === BUTTONS === */
+
 button {
     margin-top: 15px;
     padding: 12px 25px;
@@ -91,7 +91,7 @@ button:hover {
         0 0 40px #ff00ff;
 }
 
-/* === TEXT === */
+
 #hinweis {
     margin-top: 20px;
     font-size: 18px;
@@ -106,7 +106,7 @@ button:hover {
     text-shadow: 0 0 8px #ff00ff;
 }
 
-/* === GLITCH EFFECT OPTIONAL === */
+
 @keyframes glitch {
     0% { text-shadow: 2px 2px #ff00ff; }
     50% { text-shadow: -2px -2px #00fff7; }
